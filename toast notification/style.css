@@ -1,0 +1,48 @@
+.toast-container {
+  position: fixed;
+  bottom: -140px;
+  width: 90%;
+  max-width: 720px;
+  display: flex;
+  align-items: center;
+  background: #000;
+  color: #fff;
+  font-family: "Montserrat", sans-serif;
+  padding: 0 16px;
+  border-radius: 24px;
+  box-shadow: 0 8px 20px -4px rgba(0, 0, 0, 0.2);
+  left: 50%;
+  transform: translateX(-50%);
+  transition: all 1800ms ease;
+}
+
+.toast-container.active {
+  bottom: 20px;
+}
+
+.toast-container h3 {
+  font-weight: 800;
+  line-height: 1.5;
+  font-size: 16px;
+}
+
+.toast-container .text-content {
+  padding: 0 24px;
+  padding-right: 40px;
+}
+
+.toast-container p.author-name {
+  color: #aaa;
+  font-size: 14px;
+}
+
+.toast-container a {
+  color: #5f64f3;
+}
+
+.toast-container .close {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  cursor: pointer;
+}

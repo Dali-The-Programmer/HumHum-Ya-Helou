@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sliding Sign Up/Login Form</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="form.js" defer></script>
+</head>
+
+
+
+
+
+
+
+
+<body>
+    <main class="log-main">
+        <div class="log-signup">
+            <span>Not a member?</span>
+            <button type="button">Sign Up</button>
+        </div>
+
+        <div class="log-login">
+            <span>Already have an account?</span>
+            <button type="button">Login</button>
+        </div>
+
+        <div class="log-back-layer">
+            <form action="" class="log-login-form active">
+                <h2>Login</h2>
+                <label for="lemail">Email</label>
+                <input type="email" id="lemail" placeholder="person@email.com" required>
+                <label for="lpassword">Password</label>
+                <input type="password" id="lpassword" placeholder="******" required>
+                <button type="submit">Login</button>
+            </form>
+    
+            <form action="" class="log-signup-form">
+                <h2>Sign Up</h2>
+                <label for="f-name">First Name</label>
+                <input type="text" id="f-name" placeholder="First Name" required>
+                <label for="l-name">Last Name</label>
+                <input type="text" id="l-name" placeholder="Last Name" required>
+                <label for="semail">Email</label>
+                <input type="email" id="semail" placeholder="person@email.com" required>
+                <label for="spassword">Password</label>
+                <input type="password" id="spassword" placeholder="******" required>
+                <button type="submit">Sign Up</button>
+            </form>
+        </div>
+    </main>
+</body>
+</html>

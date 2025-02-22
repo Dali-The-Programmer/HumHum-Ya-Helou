@@ -1,0 +1,148 @@
+:root{
+    --main-color:#C1121F;
+    --black-color: #252525;
+    --border: 0.1rem solid rgba(255, 255, 255, 0.4);
+}
+
+
+/* Universal Styles */
+*{
+    font-family: 'Poppins',sans-serif;
+    margin: 0;
+    padding: 0;
+    border: none;
+    box-sizing: border-box;
+    text-decoration: none;
+    text-transform: capitalize;
+    transition: .2s ease;
+    outline: none;
+}
+body {
+    margin: 0;
+    padding: 0;
+    background-color: var(--main-color);
+    font-family: 'Lato', sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: var(--black-color);
+}
+
+/* Main Layout */
+.log-main {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    margin: 100px auto 0;
+    max-width: 800px;
+    overflow: hidden;
+}
+
+.log-main > * {
+    grid-row: 1 / 2;
+}
+
+/* Signup and Login Panels */
+.log-signup, .log-login {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+    padding: 40% 0;
+    color: #fff;
+    font-size: 23px;
+    background-color: var(--black-color);
+}
+
+.log-login > button, .log-signup > button {
+    border: none;
+    background-color: #fff;
+    color: #0e031a;
+    cursor: pointer;
+    padding: 10px 20px;
+    border-radius: 10px;
+}
+
+.log-login {
+    grid-column: 1 / 2;
+}
+
+.log-signup {
+    grid-column: 2 / 3;
+}
+
+/* Form Styles */
+.log-login-form, .log-signup-form {
+    grid-column: 1 / 2;
+    transform: translateX(-100%);
+    transition: transform 0.5s;
+    background-color: #fff;
+    padding: 30px 20px;
+    max-width: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: #0e031a;
+    border-radius: 10px;
+}
+
+.log-signup-form {
+    grid-column: 2 / 3;
+    transform: translateX(100%);
+    transition: transform 0.5s;
+}
+
+.log-login-form.active, .log-signup-form.active {
+    transform: translateX(0);
+}
+
+.log-back-layer {
+    grid-column: 1 / 3;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    clip-path: inset(0 50% 0 0);
+    background-color: #fff;
+    z-index: 5;
+    transition: clip-path 0.3s, transform 0.3s;
+}
+
+/* Input and Button Styles */
+input {
+    height: 40px;
+    width: 100%;
+    border-radius: 15px;
+    padding-left: 15px;
+    border: 2px solid #ccc;
+    margin-bottom: 20px;
+    margin-top: 5px;
+    outline: none;
+}
+
+input:focus {
+    border-color: rgb(255, 0, 64);
+}
+
+label {
+    font-weight: 600;
+    margin-bottom: 5px;
+}
+
+button {
+    background-color: transparent;
+    border: 2px solid rgb(255, 0, 64);
+    border-radius: 15px;
+    color: rgb(255, 0, 64);
+    width: 120px;
+    height: 40px;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: rgb(255, 0, 64);
+    color: #fff;
+}
