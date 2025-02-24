@@ -41,3 +41,5 @@ Log In / Sign Up
 ![signup](https://github.com/user-attachments/assets/685aa7cd-e8a0-466a-8506-3081d3f1c529)
 Footer
 ![footer](https://github.com/user-attachments/assets/c54bd564-02d6-4d66-a547-c38efd500312)
+Toast notification
+![Screenshot 2025-02-24 095654](https://github.com/user-attachments/assets/24de577a-fe61-4ba6-b5f0-b74b0d31a766)
